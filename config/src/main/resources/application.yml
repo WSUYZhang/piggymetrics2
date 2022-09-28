@@ -1,9 +1,16 @@
+encrypt:
+  key: KQGCUOQENLEVXMGYBSYP
+
 spring:
   cloud:
     config:
       server:
         native:
           search-locations: classpath:/shared
+        #git:
+        #  uri: https://github.com/yzhangweber/cloudconfig-piggymetricsweber.git
+        #  search-paths:
+        #    - config*
   profiles:
      active: native
   security:
